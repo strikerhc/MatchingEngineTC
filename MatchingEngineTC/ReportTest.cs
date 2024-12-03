@@ -41,7 +41,7 @@ namespace MatchingEngineTC
                 IWebElement productsSupportedButton = wait.Until(e => e.FindElement(By.XPath("//span[text()='Products Supported']")));
                 productsSupportedButton.Click();
 
-                Thread.Sleep(1000);
+                Thread.Sleep(5000);
                 IWebElement supportedProductsHeader = wait.Until(e => e.FindElement(By.XPath("//h3[contains(text(), 'There are several types of Product Supported:')]")));
                 Assert.IsTrue(supportedProductsHeader.Displayed, "The Supported Products section is not visible.");
 
